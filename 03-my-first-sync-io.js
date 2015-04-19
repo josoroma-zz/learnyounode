@@ -1,0 +1,9 @@
+// node 03-my-first-sync-io.js poem
+// learnyounode verify 03-my-first-sync-io.js
+
+var fs = require('fs');
+
+var contents = fs.readFileSync(process.argv[2]);
+var lines = contents.toString().split('\n').length - 1;
+
+console.log(lines);
